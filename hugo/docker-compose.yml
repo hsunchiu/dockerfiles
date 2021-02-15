@@ -12,7 +12,7 @@ services:
 
   server:
     image: hugo:latest
-    command: server
+    command: server --bind="0.0.0.0"
     volumes:
      - ".:/site"
     ports:
